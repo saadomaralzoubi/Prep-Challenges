@@ -39,7 +39,7 @@
 
 const objectCounter = (obj) => {
   let count = obj.reduce(
-    (counter, x) => (x.voter_Name != null ? (count += 1) : counter),
+    (counter, x) => (x.voter_Name != null ? (counter += 1) : counter),
     0
   );
   return count;
