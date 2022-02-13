@@ -13,11 +13,11 @@
 
 const reverseString = (string) => {
   let Array = string.split("");
-  const reversedArray = [];
+  const newArray = [];
   for (let i = 0; i < Array.length; i++) {
-    reversedArray.unshift(Array[i]);
+    newArray.unshift(Array[i]);
   }
-  return reversedArray.join("");
+  return newArray.join("");
 };
 
 // -------------------------------------------------------------------------------------------------------
