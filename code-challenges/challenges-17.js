@@ -18,7 +18,11 @@ const recursionPattern = (n, x) => {
   if (n <= 0) {
     return [n];
   } else {
-    return [n] + recursionPattern(n - x, x) + [n];
+    var list = recursionPattern(n - x, x);
+    list.unshift(n);
+    list.push(n);
+
+    return list;
   }
 };
 // -------------------------------------------------------------------------------------------------------
