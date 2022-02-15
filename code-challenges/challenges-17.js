@@ -14,8 +14,12 @@
 // Output: [50, 41, 32, 23, 14, 5, -4, 5, 14, 23, 32, 41, 50]
 //
 
-const recursionPattern = (int1, int2) => {
-  // write your code here
+const recursionPattern = (n, x) => {
+  if (n <= 0) {
+    return [n];
+  } else {
+    return [n] + recursionPattern(n - x, x) + [n];
+  }
 };
 // -------------------------------------------------------------------------------------------------------
 
